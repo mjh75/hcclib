@@ -1,0 +1,8 @@
+{
+    "name": "hartwick/hcclib",
+    "autoload": {
+        "psr-0": {
+            "com\\hartwick": "src"
+        }
+    }
+}
