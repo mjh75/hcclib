@@ -17,5 +17,6 @@
         "psr-0": {
             "com\\hartwick": ""
         }
-    }
+    },
+    "target-dir": "vendor/hcc"
 }
