@@ -1,5 +1,6 @@
 {
     "name": "hartwick/hcclib",
+    "description": "Description",
     "autoload": {
         "psr-0": {
             "com\\hartwick": "src"
