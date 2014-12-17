@@ -14,9 +14,8 @@
         "php": ">=5.4.1"
     },
     "autoload": {
-        "psr-0": {
-            "com\\hartwick": ""
+        "psr-4": {
+            "com\\hartwick": "com/hartwick"
         }
-    },
-    "target-dir": "vendor/hcc"
+    }
 }
