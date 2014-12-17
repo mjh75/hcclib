@@ -4,7 +4,7 @@
     "license": "proprietary",
     "autoload": {
         "psr-0": {
-            "com\\hartwick\\": "/"
+            "com\\hartwick": ""
         }
     }
 }
