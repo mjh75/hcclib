@@ -3,8 +3,8 @@
     "description": "Description",
     "license": "proprietary",
     "autoload": {
-        "psr-0": {
-            "com\\hartwick": "src"
+        "psr-4": {
+            "com\\hartwick\\": "src"
         }
     }
 }
