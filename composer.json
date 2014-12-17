@@ -15,7 +15,7 @@
     },
     "autoload": {
         "psr-4": {
-            "com\\hartwick": "com/hartwick"
+            "com\\hartwick\\": "com/hartwick/"
         }
     }
 }
