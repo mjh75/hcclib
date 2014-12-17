@@ -1,7 +1,18 @@
 {
     "name": "hartwick/hcclib",
+    "type": "library",
     "description": "Description",
     "license": "proprietary",
+    "authors": [
+        {
+            "name": "Michael J. Hartwick",
+            "email": "hartwick@hartwick.com",
+            "role" : "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.1"
+    },
     "autoload": {
         "psr-0": {
             "com\\hartwick": ""
