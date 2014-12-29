@@ -383,15 +383,16 @@ class MyDB {
 
   /*! \brief Get the error that a Query Set has
    * \param $key The Query Set index
+   * \param $numonly If only the error number is wanted
    * \return null if no index provided
    * \return The value returned by QS->getError
    * \sa MyQS::getError
    */
-  public function QSError($key = NULL) {
+  public function QSError($key = NULL, $numonly = \FALSE) {
     if($key === NULL) {
       return NULL;
     }
-    return $this->QS[$key]->getError();
+    return $this->QS[$key]->getError($numonly);
   }
 
   /*! \brief Get the number of rows returned by the Query Set

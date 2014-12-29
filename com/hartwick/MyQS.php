@@ -156,16 +156,21 @@ class MyQS {
   }
 
   /*! \brief Get the error that is set for this Query Set
+   * \param $numonly Only return the error number
    * \return A string value that has the error and error number
    */
-  public function getError() {
+  public function getError($numonly = \FALSE) {
     if(isset($this->error) && isset($this->errno)) {
-      return $this->error." [".$this->errno."]";
+      if($numonly === \TRUE) {
+        return $this->errno;
+      } else {
+        return $this->error." [".$this->errno."]";
+      }
     } else {
       return "";
     }
   }
-
+    
   /*! \brief Free up any resources in use by this Query Set
    *
    * This method free's the MySQL result set if there is one, unsets the query,
