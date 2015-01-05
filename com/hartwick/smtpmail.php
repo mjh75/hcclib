@@ -122,7 +122,7 @@ class smtpmail {
       $attachment .= "Content-Type: \"$type\"; name=\"$name\"".$this->newline;
     }
     $attachment .= "Content-Transfer-Encoding: base64".$this->newline;
-    $attachment .= "Content-Disposition: attachment".$this->newline;
+    $attachment .= "Content-Disposition: attachment; filename=\"$name\"".$this->newline;
     if(!empty($id)) {
       $attachment .= "Content-ID: <$id>".$this->newline;
     }
