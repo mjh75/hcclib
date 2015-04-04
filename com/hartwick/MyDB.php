@@ -1,5 +1,5 @@
 <?php namespace com\hartwick;
-define("__MYDB_VERSION__", "2.1.5");
+define("__MYDB_VERSION__", "2.1.6");
 define("__MYDB_URL__", "http://www.hartwick.com/software/com_hartwick/mydbversion.php");
 
 /*! \file mysql.class.inc
