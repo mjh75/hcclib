@@ -1,5 +1,5 @@
 <?php namespace com\hartwick;
-define("__MYDB_VERSION__", "2.1.0");
+define("__MYDB_VERSION__", "2.1.5");
 define("__MYDB_URL__", "http://www.hartwick.com/software/com_hartwick/mydbversion.php");
 
 /*! \file mysql.class.inc
@@ -188,6 +188,8 @@ class MyDB {
     $this->QS = array();
     $this->addQS();
     $this->showProfile = 0;
+    $this->errno = 0;
+    $this->error = "";
     register_shutdown_function(array(&$this, "shutdown"));
   }
 
