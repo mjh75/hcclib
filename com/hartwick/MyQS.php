@@ -1,5 +1,5 @@
 <?php namespace com\hartwick;
-define("__MYQS_VERSION__", "2.1.0");
+define("__MYQS_VERSION__", "2.1.6");
 /*!  \brief MyQS Database Query Set class.
  *
  * Allow the MyDB class to handle multiple queries over one database connection.
@@ -141,7 +141,7 @@ class MyQS {
    */
   public function getRows() {
     if(!isset($this->rows)) {
-      return FALSE;
+      return 0;
     }
     return $this->rows;
   }
