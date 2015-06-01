@@ -23,7 +23,7 @@ class xml {
   function __construct($type = "reply", $source = null, $dtdpath = "/hcc.dtd", $dtdroot = "hcc") {
     $this->type = $type;
     $this->type = "reply";
-    $implementation = new DOMImplementation();
+    $implementation = new \DOMImplementation();
     $dtd = $implementation->createDocumentType($dtdroot, '', $dtdpath);
     $this->document = $implementation->createDocument('', '', $dtd);
     $this->root = $this->document->createElement($dtdroot);
