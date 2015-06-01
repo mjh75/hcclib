@@ -162,7 +162,6 @@ class xml {
     if($this->document->validate()) return $this->document->saveXML();
     else {
       $error = $this->libxml_display_errors();
-      report_error($error);
       return "Invalid XML";
     }
   }
