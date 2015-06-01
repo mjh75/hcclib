@@ -1,7 +1,7 @@
 <?php namespace com\hartwick;
 define("__HCCXML_VERSION__", "2.1.0");
 
-class hccxml {
+class xml {
   private $type;
   private $document;
   private $root;
