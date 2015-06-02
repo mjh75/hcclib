@@ -92,7 +92,7 @@ class xml {
     $this->version = $element;
   }
 
-  public function addData($attribute, $data, $textvalue = NULL) {
+  public function addData($attribute, $data = NULL, $textvalue = NULL) {
     $element = $this->document->createElement($attribute);
     if(is_array($data)) {
       foreach($data as $key=>$value) {
