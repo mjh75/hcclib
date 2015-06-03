@@ -126,16 +126,24 @@ class xml {
    */
   public function assemble() {
     /* Add the Child nodes in the order we want them in the output */
-    if($this->type != "reply") return;
+    if($this->type != "reply") {
+      return;
+    }
 
     /* Start with the id */
-    if(isset($this->id)) $this->reply->appendChild($this->id);
+    if(isset($this->id)) {
+      $this->reply->appendChild($this->id);
+    }
 
     /* Add the version */
-    if(isset($this->version)) $this->reply->appendChild($this->version);
+    if(isset($this->version)) {
+      $this->reply->appendChild($this->version);
+    }
 
     /* Error.... */
-    if(isset($this->error)) $this->reply->appendChild($this->error);
+    if(isset($this->error)) {
+      $this->reply->appendChild($this->error);
+    }
 
     /* Debugs.... */
     if(is_array($this->debugs)) {
@@ -159,8 +167,9 @@ class xml {
     $this->document->resolveExternals = true;
     $this->document->formatOutput = true;
     $this->document->encoding = "utf-8";
-    if($this->document->validate()) return $this->document->saveXML();
-    else {
+    if($this->document->validate()) {
+      return $this->document->saveXML();
+    } else {
       $error = $this->libxml_display_errors();
       return "Invalid XML";
     }
