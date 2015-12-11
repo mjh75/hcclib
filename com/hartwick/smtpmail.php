@@ -150,7 +150,7 @@ class smtpmail {
     //connect to the host and port
     $errno = 0;
     $errstr = "";
-    $timeout = 0;
+    $timeout = 10;
     $x = 0;
     $this->logArray['trying'][$x] = "Trying ".$this->server.":".$this->port;
     $smtpConnect = fsockopen($this->server, $this->port, $errno, $errstr, $timeout);
