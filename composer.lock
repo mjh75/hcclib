@@ -4,13 +4,60 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "92fd4eeefbac4bf9cb84d187a82be647",
-    "content-hash": "3dc4116e59acd0ecb8ff80fee3c1872f",
-    "packages": [],
+    "hash": "de846a5561537901f066391997679253",
+    "content-hash": "e8755005c3648db59c38322c09998782",
+    "packages": [
+        {
+            "name": "pear/net_dns2",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mikepultz/netdns2.git",
+                "reference": "4cb4c1718cf628de8e103bd4288d2d7d2268c63c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mikepultz/netdns2/zipball/4cb4c1718cf628de8e103bd4288d2d7d2268c63c",
+                "reference": "4cb4c1718cf628de8e103bd4288d2d7d2268c63c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.1.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Net_DNS2": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Mike Pultz",
+                    "email": "mike@mikepultz.com",
+                    "homepage": "http://mikepultz.com/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Native PHP5 DNS Resolver and Updater Library",
+            "homepage": "http://netdns2.com/",
+            "keywords": [
+                "PEAR",
+                "dns",
+                "network"
+            ],
+            "time": "2015-12-31 22:56:56"
+        }
+    ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "pear/net_dns2": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
