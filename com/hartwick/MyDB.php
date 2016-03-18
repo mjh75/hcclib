@@ -182,14 +182,14 @@ class MyDB {
                            'readconnections'=>0,
                            'rows'=>0
                           );
+    $this->errno = 0;
+    $this->error = "";
+    $this->showProfile = 0;
     $this->configure($server, $database, $username, $password);
     $this->safe_reader_connect();
     $this->safe_writer_connect();
     $this->QS = array();
     $this->addQS();
-    $this->showProfile = 0;
-    $this->errno = 0;
-    $this->error = "";
     register_shutdown_function(array(&$this, "shutdown"));
   }
 
