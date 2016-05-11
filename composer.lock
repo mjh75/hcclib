@@ -4,21 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "f3bd2d96b50f6cf81f201063fbedaef1",
-    "content-hash": "e8755005c3648db59c38322c09998782",
+    "hash": "73ceb00ca2bc38dee74c6723ab3689ac",
+    "content-hash": "4027839c26aff56ae7f0e0ccc4be1102",
     "packages": [
         {
             "name": "pear/net_dns2",
-            "version": "dev-master",
+            "version": "1.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mikepultz/netdns2.git",
-                "reference": "4cb4c1718cf628de8e103bd4288d2d7d2268c63c"
+                "reference": "ba0ede1df70ed98591a14efc88fb9097eafaf541"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mikepultz/netdns2/zipball/4cb4c1718cf628de8e103bd4288d2d7d2268c63c",
-                "reference": "4cb4c1718cf628de8e103bd4288d2d7d2268c63c",
+                "url": "https://api.github.com/repos/mikepultz/netdns2/zipball/ba0ede1df70ed98591a14efc88fb9097eafaf541",
+                "reference": "ba0ede1df70ed98591a14efc88fb9097eafaf541",
                 "shasum": ""
             },
             "require": {
@@ -45,19 +45,16 @@
             "description": "Native PHP5 DNS Resolver and Updater Library",
             "homepage": "http://netdns2.com/",
             "keywords": [
-                "PEAR",
                 "dns",
                 "network"
             ],
-            "time": "2015-12-31 22:56:56"
+            "time": "2015-04-13 00:55:32"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "pear/net_dns2": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
