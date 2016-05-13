@@ -9,7 +9,6 @@ define("__HTTP2TEXT_VERSION__", "2.1.0");
 
 class html2text {
   private $DOM;
-  private $error;
   private $text;
 
   /*! \brief Load an HTML document into a DOM object
@@ -18,11 +17,12 @@ class html2text {
   function __construct($html) {
     $this->DOM = new \DOMDocument();
     if(!$this->DOM->loadHTML($html)) {
-      $this->error = "Bad HTML -- could not parse";
-      return;
+      throw new Exception("Bad HTML -- could not parse");
+      return \FALSE;
     }
     $this->DOM->normalizeDocument();
     $this->parse();
+		return \TRUE;
   }
 
   /*! \brief Get the "rendered" text version of the HTML handed to us
