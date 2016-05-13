@@ -17,7 +17,6 @@ class html2text {
   function __construct($html) {
     $this->DOM = new \DOMDocument();
     if(!$this->DOM->loadHTML($html)) {
-      throw new Exception("Bad HTML -- could not parse");
       return \FALSE;
     }
     $this->DOM->normalizeDocument();
