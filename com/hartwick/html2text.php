@@ -11,10 +11,13 @@ class html2text {
   private $DOM;
   private $text;
 
-  /*! \brief Load an HTML document into a DOM object
-   * \param $html The HTML code that we are to parse and convert to text
-   */
-  function __construct($html) {
+	/**
+	 * Load the HTML document into a DOM, normalize it and then parse it
+	 * 
+	 * @param string $html The document to load
+	 * @return boolean TRUE on success, FALSE on fail
+	 */
+	function __construct($html) {
     $this->DOM = new \DOMDocument();
     if(!$this->DOM->loadHTML($html)) {
       return \FALSE;
@@ -24,11 +27,13 @@ class html2text {
 		return \TRUE;
   }
 
-  /*! \brief Get the "rendered" text version of the HTML handed to us
-   * \param $wrap The number of characters to wrap the returned text to
-   * \return A string containing the rendered text version of the HTML
-   */
-  public function getText($wrap = 0) {
+	/**
+	 * Get the text version of an HTML document optionally word wrapped
+	 * 
+	 * @param integer $wrap The number of lines to wrap the text
+	 * @return string The text verson of the HTML, word wrapped at $wrap
+	 */
+	public function getText($wrap = 0) {
     if($wrap > 0) {
       return wordwrap($this->text, $wrap);
     } else {
@@ -36,10 +41,10 @@ class html2text {
     }
   }
 
-  /*! \brief Start the rendering process at the top
-   *
-   */
-  private function parse() {
+	/**
+	 * Parse the DOM storing the results in the text property
+	 */
+	private function parse() {
     $this->text = $this->iterate_over_node($this->DOM);
   }
 
