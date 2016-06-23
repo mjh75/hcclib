@@ -1,5 +1,3 @@
-<?php
-namespace com\hartwick;
 <?php namespace com\hartwick;
 /* 
  * Copyright (C) 2016 Michael J. Hartwick <hartwick at hartwick.com>
