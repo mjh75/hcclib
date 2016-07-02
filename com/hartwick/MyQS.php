@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-\define("__MYQS_VERSION__", "2.1.6");
+
 /*!  \brief MyQS Database Query Set class.
  *
  * Allow the MyDB class to handle multiple queries over one database connection.

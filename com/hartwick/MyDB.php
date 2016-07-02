@@ -16,13 +16,9 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-define("__MYDB_VERSION__", "2.1.6");
-define("__MYDB_URL__", "http://www.hartwick.com/software/com_hartwick/mydbversion.php");
-
 /*! \file mysql.class.inc
  * \brief Contains the MyDB class
  * \author Michael J. Hartwick <hartwick@hartwick.com>
- * \version 2.1.0
  */
 
 /*!	\brief MySQL Database class.
