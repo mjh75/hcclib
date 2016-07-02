@@ -41,34 +41,6 @@ class MyDB {
 	private $error;			 /*!< Connection wide error, not for specific queries */
 	public $showProfile;	/*!< Do we want the profile displayed */
 
-	/*! \brief Method to return this classes version
-	 *
-	 * This method simply returns the version of the class.
-	 */
-	public function version() {
-		return __MYDB_VERSION__;
-	}
-
-	/*! \brief Check to see if the version is current
-	 *
-	 * Check back with the server to make sure the latest version of the library is being used.
-	 */
-	public function IsLatestVersion() {
-		$contents = '';
-		$handle = @fopen(__MYDB_URL__, "r");
-		if($handle == FALSE) {
-			return -1;
-		}
-		while(!feof($handle)) {
-			$contents .= fread($handle, 8192);
-		}
-		fclose($handle);
-		$latestversion = $contents;
-		if($latestversion != $this->version()) {
-			echo "MyDB_class is not up to date. The latest version is $latestversion.";
-		}
-	}
-
 	/*! \brief Open a "reader" connection
 	 *
 	 */
