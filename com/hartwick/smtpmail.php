@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-define("__SMTPMAIL_VERSION__", "2.1.0");
+define("__SMTPMAIL_VERSION__", "2.1.1");
 
 /*! \brief SMTP Mailing class
  * smtpmail supports SMTP authentication, attachments and multiple recipients.
@@ -251,7 +251,11 @@ class smtpmail {
       if(!empty($value['name'])) {
         $name = $value['name'];
       }
-      \fputs($smtpConnect, "To: \"$name\" <$address>".$this->newline);
+			if(!empty($name)) {
+				\fputs($smtpConnect, "To: \"$name\" <$address>".$this->newline);
+			} else {
+				\fputs($smtpConnect, "To: <$address>".$this->newline);
+			}
     }
     
     foreach($this->headers as $header) {
